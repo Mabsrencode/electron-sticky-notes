@@ -283,21 +283,6 @@ Each note now includes:
 
 - **Ctrl/Cmd + N**: Create new note (opens template picker)
 
----
-
-## Files Modified
-
-- `renderer.js`: Core logic for templates, bulk ops, search filters, locking, tags
-- `note.js`: Pop-out window support for all features
-- `note.html`: Added Lock, Tag, Folder buttons
-- `index.html`: (unchanged, handles checkboxes via JS)
-- `styles.css`: (supports modals and layouts)
-- `package.json`: (unchanged)
-- `main.js`: (unchanged, IPC and notifications stable)
-- `README.md`: Updated feature list
-
----
-
 ## Future Enhancements
 
 - **Voice Notes**: Record audio clips within notes
