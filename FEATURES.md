@@ -282,19 +282,6 @@ Each note now includes:
 ## Keyboard Shortcuts
 
 - **Ctrl/Cmd + N**: Create new note (opens template picker)
-
-## Future Enhancements
-
-- **Voice Notes**: Record audio clips within notes
-- **Desktop Widgets**: Windows 11 widget support for quick access
-- **Rich Text**: Bold, italic, underline, bullet points
-- **Note Encryption**: AES encryption for locked notes
-- **Auto-tagging**: Keywords suggest tags automatically
-- **Note Versioning**: Keep history of edits
-- **Cloud Sync**: Optional backup to cloud (respecting local-first philosophy)
-- **Collaborative Sharing**: Share read-only or editable links
-- **Dark/Light themes**: More theme options
-
 ---
 
 ## Troubleshooting
