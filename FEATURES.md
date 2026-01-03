@@ -323,13 +323,4 @@ Each note now includes:
 
 ---
 
-## Contributing
-
-To add more features:
-
-1. Update note data model in `ensureNoteExists()` and `createNoteFromTemplate()`
-2. Add UI elements to `buildNoteCard()` or `note.html`
-3. Wire event listeners in respective JS files
-4. Update `persistNotes()` calls to save changes
-5. Test across main board and pop-out windows
 
