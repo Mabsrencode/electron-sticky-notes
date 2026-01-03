@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Notes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="app-bar">
+        <div class="title-block">
+            <div class="dot"></div>
+            <div>
+                <p class="eyebrow">Personal board</p>
+                <h1>Sticky Notes</h1>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="newNoteBtn" class="primary">+ New note</button>
+            <button id="pinToggle" class="ghost" title="Show only pinned">Pin filter</button>
+            <button id="compactToggle" class="ghost" title="Toggle compact view">Compact</button>
+        </div>
+    </header>
+
+    <section class="filters">
+        <div class="search-box">
+            <span>🔍</span>
+            <input id="searchInput" type="search" placeholder="Search notes by text, tag, or color" autocomplete="off">
+        </div>
+        <div class="chip-row">
+            <button class="chip active" data-sort="updated">Recently touched</button>
+            <button class="chip" data-sort="created">Recently created</button>
+            <button class="chip" data-sort="title">Title A → Z</button>
+        </div>
+    </section>
+
+    <main>
+        <div id="notesContainer" class="notes-grid"></div>
+        <div id="emptyState" class="empty">
+            <p class="eyebrow">Nothing yet</p>
+            <h2>Start with a thought</h2>
+            <p>Create a note to stash ideas, todos, or snippets. Everything stays on this device.</p>
+            <button id="emptyNew" class="primary">Create note</button>
+        </div>
+    </main>
+
+    <footer class="status-bar">
+        <div id="summaryText">0 notes</div>
+        <div class="hint">Ctrl/Cmd + N to add • Double-click a card to pop it out</div>
+        <div class="hint"><a href="https://www.mabsrencode.xyz" target="_blank" rel="noreferrer">Made by Mabsrencode</a>
+        </div>
+    </footer>
+
+    <script defer src="renderer.js"></script>
+</body>
+
+</html>

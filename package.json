@@ -1,0 +1,49 @@
+{
+  "name": "electron-sticky-notes",
+  "version": "0.1.0",
+  "description": "Personal sticky notes desktop app built with Electron.",
+  "author": "Reniel George Mababa",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "dist": "electron-builder --win nsis"
+  },
+  "devDependencies": {
+    "electron": "^39.2.7",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.personal.stickynotes",
+    "productName": "Sticky Notes",
+    "icon": "build/icon.png",
+    "extraResources": [
+      {
+        "from": "build/icon.png",
+        "to": "icon.png"
+      }
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!dist{,/**}",
+      "!build{,/**}",
+      "build/icon.png",
+      "!node_modules/.cache{,/**}"
+    ],
+    "asar": true,
+    "win": {
+      "target": "nsis",
+      "artifactName": "${productName}-Setup-${version}.${ext}"
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "allowElevation": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  }
+}

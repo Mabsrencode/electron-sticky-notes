@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Note</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="single-note-body">
+    <header class="app-bar">
+        <div class="title-block">
+            <div class="dot"></div>
+            <div>
+                <p class="eyebrow">Pop-out</p>
+                <h1>Note</h1>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="closeBtn" class="ghost">Close</button>
+        </div>
+    </header>
+
+    <main class="single-note">
+        <input id="noteTitle" class="note-title" placeholder="Untitled" aria-label="Note title" autocomplete="off" />
+        <textarea id="noteBody" class="note-body" rows="8" placeholder="Write something meaningful…"></textarea>
+
+        <div class="inline-controls">
+            <div class="color-palette" id="colorPalette"></div>
+            <div class="inline-actions">
+                <button id="pinBtn" class="chip">Pin</button>
+                <button id="reminderBtn" class="chip">Remind</button>
+                <button id="lockBtn" class="chip">Lock</button>
+                <button id="tagBtn" class="chip">Tag</button>
+                <button id="folderBtn" class="chip">Folder</button>
+                <button id="voiceBtn" class="chip">🎙️ Record</button>
+                <button id="duplicateBtn" class="chip">Duplicate</button>
+                <button id="deleteBtn" class="chip danger">Delete</button>
+            </div>
+        </div>
+        <div id="voiceNotesContainer"></div>
+        <p class="meta" id="metaText"></p>
+    </main>
+
+    <script defer src="note.js"></script>
+</body>
+
+</html>
