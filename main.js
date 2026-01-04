@@ -63,7 +63,7 @@ const createNoteWindow = (noteId) => {
 
 app.whenReady().then(() => {
   app.name = 'Sticky Notes';
-  // Menu.setApplicationMenu(null);
+  Menu.setApplicationMenu(null);
 
   createMainWindow();
 
