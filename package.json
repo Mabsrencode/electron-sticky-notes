@@ -2,7 +2,7 @@
   "name": "electron-sticky-notes",
   "version": "0.1.0",
   "description": "Personal sticky notes desktop app built with Electron.",
-  "author": "Reniel George Mababa",
+  "author": "Mabsrencode",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
