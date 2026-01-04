@@ -283,7 +283,12 @@ button.chip.danger { color: #ffd5d5; border-color: rgba(239, 68, 68, 0.4); }
   color: var(--text);
   font-family: 'Space Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif;
 }
-
+.note-body::-webkit-scrollbar{
+  display: none;
+}
+html::-webkit-scrollbar{
+  display: none;
+}
 .inline-controls {
   display: flex;
   align-items: center;
@@ -292,9 +297,13 @@ button.chip.danger { color: #ffd5d5; border-color: rgba(239, 68, 68, 0.4); }
   flex-wrap: wrap;
 }
 
+textarea:focus, input:focus {
+  outline: none;
+}
+
 .color-palette { display: flex; align-items: center; gap: 10px; }
 
-.inline-actions { display: flex; gap: 8px; }
+.inline-actions { display: flex; gap: 8px; flex-wrap: wrap; }
 
 .meta { margin: 0; color: var(--muted); font-size: 12px; }
 
